@@ -18,3 +18,4 @@
 /data/output/*.cpg
 /data/output/*.qix
 /data/output/*.shp.xml
+.Rproj.user

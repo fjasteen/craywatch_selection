@@ -43,42 +43,9 @@ kml_data <- kml_data %>% select(-Description)
 kml_data <- cbind(kml_data, df)
 
 
-# Functie om Latitude en Longitude velden bij te werken met de bestaande coördinaten van punten
-update_coordinates <- function(shapefile) {
-  # Controleer of de kolommen 'Latitude' en 'Longitude' bestaan, zo niet voeg ze toe
-  if (!"Latitude" %in% colnames(shapefile)) {
-    shapefile$Latitude <- NA
-  }
-  if (!"Longitude" %in% colnames(shapefile)) {
-    shapefile$Longitude <- NA
-  }
-  
-  # Converteer de kolommen 'Latitude' en 'Longitude' naar numeriek
-  shapefile$Latitude <- as.numeric(shapefile$Latitude)
-  shapefile$Longitude <- as.numeric(shapefile$Longitude)
-  
-  # Extraheer de coördinaten van de punten
-  coordinates <- st_coordinates(shapefile)
-  
-# Update de Latitude en Longitude kolommen waar deze NA of leeg zijn
-shapefile <- shapefile %>%
-    mutate(
-      Latitude = if_else(is.na(Latitude) | Latitude == "", coordinates[, 2], Latitude),
-      Longitude = if_else(is.na(Longitude) | Longitude == "", coordinates[, 1], Longitude)
-    )
-  
-  return(shapefile)
-}
-
-# Toepassen op kml_data
-kml_data <- update_coordinates(kml_data)
-head(kml_data)
-print("Coordinates successfully added to Localiteiten")
-
 
 ###Transform before doing intersects with other layers
 kml_data <- st_transform(kml_data, crs = 31370)
-
 
 ###Voer de bewerkingen uit voor de nieuw gecreëerde punten
 #Lees de locaties
