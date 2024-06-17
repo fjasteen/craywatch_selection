@@ -50,6 +50,8 @@ provincies_path = "./data/input/shapefiles/provincies.shp"
 postkantons_path = "./data/input/shapefiles/postkantons.shp"
 gemeenten_path = "./data/input/shapefiles/gemeenten.shp"
 waterlopen_path = "./data/input/shapefiles/VhaCattraj.shp"
+polder_path = "./data/input/shapefiles/polder.shp"
+watering_path = "./data/input/shapefiles/watering.shp"
 
 #Laad de files op
 # Shapefiles inlezen
@@ -60,7 +62,10 @@ waterlopen_shape <- st_read(waterlopen_path) %>%
   st_transform(crs = st_crs(kml_data))
 waterlopen_buffer <- waterlopen_shape %>%
   st_buffer(dist = 5)
-
+watering_shape <- st_read(watering_path) %>%
+                  st_transform(crs = 31370)
+polder_shape <- st_read(polder_path)%>%
+                st_transform(crs = 31370)  
 
 
 ###UPDATE DE TOEGEKENDE WAARDEN VOOR isRESERVED
@@ -83,7 +88,8 @@ gemeenten_intersect <- st_intersection(kml_data, gemeenten_shape)
 # Intersect met waterlopen_buffer
 waterlopen_intersect <- st_intersection(kml_data, waterlopen_buffer)
 # Intersect met watervlakken_shape
-#watervlakken_intersect <- st_intersection(kml_data, watervlakken_shape)
+watering_intersect <- st_intersection(kml_data, watering_shape)
+polder_intersect <- st_intersection(kml_data, polder_shape)
 
 # Bewerk zodat je voor elke temp_id slechts één punt krijgt, het intersect & buffer kan ervoor zorgen dat punten in meerdere polygonen liggen
 # Controleer of alle waarden in waterlopen_intersect$temp_id uniek zijn
@@ -132,6 +138,15 @@ if (!"gemeente" %in% colnames(kml_data)) {
 if (!"CATC" %in% colnames(kml_data)) {
   kml_data$CATC <- NA
 }
+if (!"PolWat" %in% colnames(kml_data)) {
+  kml_data$PolWat <- NA
+}
+if (!"PWtelefoon" %in% colnames(kml_data)) {
+  kml_data$PWtel <- NA
+}
+if (!"PWemail" %in% colnames(kml_data)) {
+  kml_data$PWemail <- NA
+}
 
 # Maak dictionaries van de intersecties
 prov_dict <- setNames(provincies_intersect$PROVNAAM, provincies_intersect$temp_id)
@@ -140,7 +155,12 @@ gem_dict <- setNames(gemeenten_intersect$GEMNAAM, gemeenten_intersect$temp_id)
 wat_catc_dict <- setNames(waterlopen_intersect$CATC, waterlopen_intersect$temp_id)
 wat_naam_dict <- setNames(waterlopen_intersect$NAAM, waterlopen_intersect$temp_id)
 wat_vhag_dict <- setNames(waterlopen_intersect$VHAG, waterlopen_intersect$temp_id)
-
+pol_email_dict <- setNames(polder_intersect$EMAIL, polder_intersect$temp_id)
+pol_tel_dict <- setNames(polder_intersect$TELEFOON, polder_intersect$temp_id)
+pol_naam_dict <- setNames(polder_intersect$NAAMPOL, polder_intersect$temp_id)
+wat_email_dict <- setNames(watering_intersect$EMAIL, watering_intersect$temp_id)
+wat_tel_dict <- setNames(watering_intersect$TELEFOON, watering_intersect$temp_id)
+wat_naam_dict <- setNames(watering_intersect$NAAMWAT, watering_intersect$temp_id)
 
 # Update de velden in kml_data gebaseerd op de intersecties alleen als de velden leeg zijn
 kml_data <- kml_data %>%
@@ -151,7 +171,10 @@ kml_data <- kml_data %>%
     postcode = if_else(is.na(postcode) | postcode == "", post_dict[as.character(temp_id)], postcode),
     CATC = if_else(is.na(CATC) | CATC == "", wat_catc_dict[as.character(temp_id)], CATC), 
     NAAM = if_else(is.na(NAAM) | NAAM == "", wat_naam_dict[as.character(temp_id)], NAAM),
-    VHAG = if_else(is.na(VHAG) | VHAG == 0 | VHAG == "", wat_vhag_dict[as.character(temp_id)], VHAG)
+    VHAG = if_else(is.na(VHAG) | VHAG == 0 | VHAG == "", wat_vhag_dict[as.character(temp_id)], VHAG),
+    PolWat = if_else(CATC %in% c(2, 3) & (is.na(PolWat) | PolWat == ""), pol_naam_dict[as.character(temp_id)], PolWat),
+    PWemail = if_else(CATC %in% c(2, 3) & (is.na(PWemail) | PWemail == ""), pol_email_dict[as.character(temp_id)], PWemail),
+    PWtel = if_else(CATC %in% c(2, 3) & (is.na(PWtel) | PWtel == ""), pol_tel_dict[as.character(temp_id)], PWtel)
   ) %>%
   ungroup() %>%
   select(-temp_id) 
