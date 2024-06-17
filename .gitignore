@@ -1,0 +1,20 @@
+# Voeg deze regels toe om shapefiles en hun gerelateerde bestanden te negeren
+*.shp
+*.shx
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.cpg
+*.qix
+*.shp.xml
+*.gpkg
+/data/output/*.shp
+/data/output/*.shx
+/data/output/*.dbf
+/data/output/*.prj
+/data/output/*.sbn
+/data/output/*.sbx
+/data/output/*.cpg
+/data/output/*.qix
+/data/output/*.shp.xml
