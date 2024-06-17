@@ -212,10 +212,8 @@ kml_data <- kml_data %>%
 
 print("LocID toegevoegd aan nieuwe locaties")
 
-#Change order of the fields for easier point selection in MyMaps
-ordered_columns<-c("isReserved","updateRes","OMSCHR","NAAM","vrijwillID","startDate","SugbyINBO","locID","restricties", "Sampler","dataset", "SystemType","GEBIED","provincie","gemeente","postcode","CATC","VHAG", "WVLC","Latitude","Longitude")
 
-#Save als shape en als csv
+#Save als csv
 
 ## Save als een csv bestand
 # Definieer het pad naar het CSV-bestand
