@@ -3015,9 +3015,9 @@
       </Point>
     </Placemark>
     <Placemark>
-      <name>FALSE</name>
+      <name>ONHOLD</name>
       <description><![CDATA[locID: I_9140_1<br>OMSCHR: oude Heirbaan opw<br>NAAM: Barbierbeek<br>TYPE: Cat2<br>dataset: VMM_Mtp<br>Sampler:  <br>GEBIED:  <br>SystemType: Lotisch<br>WVLC:  <br>vrijwillID: njbjymrl <br>provincie: Oost-Vlaanderen<br>postcode: 9140<br>gemeente: Temse<br>SugbyINBO: YES<br>Latitude: 51.1390258<br>Longitude: 4.1649495<br>VHAG: 3109<br>updateRes: ONHOLD]]></description>
-      <styleUrl>#icon-1899-7CB342</styleUrl>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
       <ExtendedData>
         <Data name="locID">
           <value>I_9140_1</value>
@@ -81951,9 +81951,9 @@
       </Point>
     </Placemark>
     <Placemark>
-      <name>FALSE</name>
+      <name>ONHOLD</name>
       <description><![CDATA[locID: I_9140_3<br>OMSCHR: Waesmeer<br>NAAM:  <br>TYPE: Pond (deep)<br>dataset: Scheers<br>Sampler: permit?<br>GEBIED:  <br>SystemType: Lentisch<br>WVLC: OVLTEM0066<br>vrijwillID: njbjymrl <br>provincie: Oost-Vlaanderen<br>postcode: 9140<br>gemeente: Temse<br>SugbyINBO: YES<br>Latitude: 51.1209865<br>Longitude: 4.1890359<br>VHAG: 0<br>updateRes: ONHOLD]]></description>
-      <styleUrl>#icon-1899-7CB342</styleUrl>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
       <ExtendedData>
         <Data name="locID">
           <value>I_9140_3</value>
@@ -82017,9 +82017,9 @@
       </Point>
     </Placemark>
     <Placemark>
-      <name>FALSE</name>
+      <name>ONHOLD</name>
       <description><![CDATA[locID: I_9140_4<br>OMSCHR: Recreation area, Provincial Dom. De Roomacker<br>NAAM:  <br>TYPE: pond (deep)<br>dataset: Scheers<br>Sampler:  <br>GEBIED:  <br>SystemType: Lentisch<br>WVLC: OVLTEM0017<br>vrijwillID: njbjymrl<br>provincie: Oost-Vlaanderen<br>postcode: 9140<br>gemeente: Temse<br>SugbyINBO: YES<br>Latitude: 51.1178571<br>Longitude: 4.171653<br>VHAG: 0<br>updateRes: ONHOLD]]></description>
-      <styleUrl>#icon-1899-7CB342</styleUrl>
+      <styleUrl>#icon-1899-F9A825</styleUrl>
       <ExtendedData>
         <Data name="locID">
           <value>I_9140_4</value>
