@@ -43,15 +43,14 @@ kml_data <- kml_data %>% select(-Description)
 kml_data <- cbind(kml_data, df)
 
 
-
 ###Transform before doing intersects with other layers
 kml_data <- st_transform(kml_data, crs = 31370)
 
 ###Voer de bewerkingen uit voor de nieuw gecreëerde punten
 #Lees de locaties
-provincies_path = "./data/input/Rivierkreeften/provincies.shp"
-postkantons_path = "./data/input//Rivierkreeften/postkantons.shp"
-gemeenten_path = "./data/input//Rivierkreeften/gemeenten.shp"
+provincies_path = "./data/input/shapefiles/provincies.shp"
+postkantons_path = "./data/input/shapefiles/postkantons.shp"
+gemeenten_path = "./data/input/shapefiles/gemeenten.shp"
 
 #Laad de files op
 # Shapefiles inlezen
@@ -60,15 +59,12 @@ postkantons_shape <- st_read(postkantons_path)
 gemeenten_shape <- st_read(gemeenten_path)
 
 
-
-
-###UPDATE DE TEOGEKENDE WAARDEN VOOR isRESERVED
+###UPDATE DE TOEGEKENDE WAARDEN VOOR isRESERVED
 # Hernoem de kolom 'Name' naar 'isReserved'
 names(kml_data)[names(kml_data) == "Name"] <- "isReserved"
 
 # Wijs dezelfde waarden toe aan de nieuwe kolom 'isReserved'
 kml_data$isReserved <- kml_data$updateRes
-
 
 ###VOEG DE WAARDEN VOOR VELDEN provincies, gemeenten en postkantons toe
 
@@ -177,12 +173,3 @@ write.csv(st_drop_geometry(kml_data), file = csv_path, row.names = FALSE, sep = 
 
 print("CSV file successfully saved.")
 
-
-# Define the path to save the shapefile
-localiteiten_path = "./data/output/localities.shp"
-# Save kml_data as a shapefile, overwriting the existing file
-kml_shape <- kml_data %>%
-            select (-Latitude) %>%
-            select (-Longitude)
-  
-st_write(kml_shape, localiteiten_path, delete=TRUE)
