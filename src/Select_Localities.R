@@ -1,4 +1,3 @@
-
 library(sf)
 library(xml2)
 library(dplyr)
@@ -223,4 +222,5 @@ csv_path <- "./data/output/localities.csv"
 write.csv(st_drop_geometry(kml_data), file = csv_path, row.names = FALSE, sep = ",", dec = ".")
 
 print("CSV file successfully saved.")
+
 
