@@ -318,8 +318,8 @@
 "FALSE","FALSE","Moregem + Ooike,Pareel,Pareelstraat,afw weg","Volkaartsbeek"," ","NA","YES","I_9790_1"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Wortegem-Petegem","9790","2","5528"," ","50.850708871433","3.54595583128509",NA,NA,NA,NA
 "FALSE","FALSE","Nederzwalm-Hermelgem,Hoogstraat,opw weg","Zwalmbeek"," ","NA","YES","I_9636_1"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Zwalm","9636","1","5000"," ","50.8853835021514","3.68631535977147",NA,NA,NA,NA
 "FALSE","FALSE","Munkzwalm,Rekegemstraat,opw molen en stuw","Zwalmbeek"," ","NA","YES","I_9630_1"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Zwalm","9630","1","5000"," ","50.8790969604548","3.74232168700972",NA,NA,NA,NA
-"ONHOLD","ONHOLD","Nederbrakel, Heyveld, opw"," ","nwyxntuy ","NA","YES","I_9660_1"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Brakel","9660","2","5224"," ","50.8116182","3.7803241",NA,NA,NA,NA
-"ONHOLD","ONHOLD","Nederbrakel,Roensveldstraat,veldweg,afwaarts","Verrebeek","nwyxntuy ","NA","YES","I_9660_2"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Brakel","9660","2","5025"," ","50.791781","3.7598643",NA,NA,NA,NA
+"TRUE","TRUE","Nederbrakel, Heyveld, opw"," ","nwyxntuy ","NA","YES","I_9660_1"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Brakel","9660","2","5224"," ","50.8116182","3.7803241",NA,NA,NA,NA
+"TRUE","TRUE","Nederbrakel,Roensveldstraat,veldweg,afwaarts","Verrebeek","nwyxntuy ","NA","YES","I_9660_2"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Brakel","9660","2","5025"," ","50.791781","3.7598643",NA,NA,NA,NA
 "FALSE","FALSE","Sint-Blasius-Boekel, Boekelbaan, opw weg","Peerdestokbeek"," ","NA","YES","I_9630_2"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Zwalm","9630","2","5508"," ","50.8505963415233","3.71054994884822",NA,NA,NA,NA
 "FALSE","FALSE","Sint-Maria-Horebeke,Koekoekstraat-Ommegangstraat,20m afw weg","Krombeek"," ","NA","YES","I_9667_1"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Horebeke","9667","2","5683"," ","50.8337625940673","3.69233054542346",NA,NA,NA,NA
 "FALSE","FALSE","Meer; Hoogstraat/Looi, BIO en FC afwaarts brug","Mark"," ","NA","YES","I_2321_1"," ","VMM_Mtp","Lotisch"," ","Antwerpen","Hoogstraten","2321","1","9502"," ","51.4452341178689","4.74722336469871",NA,NA,NA,NA
@@ -671,7 +671,7 @@
 "FALSE","FALSE","Erpe,Honegem,Hersinkstraat","Ter Erpenbeek"," ","NA","YES","I_9420_2"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Erpe-Mere","9420","1","5953"," ","50.9492492960187","4.00142346881858",NA,NA,NA,NA
 "FALSE","FALSE","Erpe,Koebrugstraat,opw weg","Ter Erpenbeek"," ","NA","YES","I_9420_3"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Erpe-Mere","9420","1","5953"," ","50.9365646494237","3.97615635698638",NA,NA,NA,NA
 "FALSE","FALSE","Eksaarde,Reepstraat-veldweg","Zuidlede"," ","NA","YES","I_9160_6"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Lokeren","9160","1","26"," ","51.1371552963966","3.97038721707201",NA,NA,NA,NA
-"FALSE","FALSE","Stenenbrug,veldweg langs Zuidlede","Zuidlede"," ","NA","YES","I_9180_5"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Moerbeke","9180","1","26"," ","51.1478348831084","3.91104527796111",NA,NA,NA,NA
+"ONHOLD","ONHOLD","Stenenbrug,veldweg langs Zuidlede","Zuidlede","nweyoti0 ","NA","YES","I_9180_5"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Moerbeke","9180","1","26"," ","51.1478349","3.9110453",NA,NA,NA,NA
 "FALSE","FALSE","Oostakker,Mendonk,Mendonkdorp-Oostdonkstraat","Zuidlede"," ","NA","YES","I_9042_2"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Gent","9042","1","26"," ","51.1483519060155","3.82905064161166",NA,NA,NA,NA
 "FALSE","FALSE","Meldert,Molenstraat","Molenbeek"," ","NA","YES","I_9310_1"," ","VMM_Mtp","Lotisch"," ","Oost-Vlaanderen","Aalst","9310","2","20569"," ","50.9361338247239","4.12647750898252",NA,NA,NA,NA
 "FALSE","FALSE","Affligemsestraat-Driesstraat","Bellebeek"," ","NA","YES","I_1770_2"," ","VMM_Mtp","Lotisch"," ","Vlaams-Brabant","Liedekerke","1770","1","5956"," ","50.8858066794663","4.09567059431518",NA,NA,NA,NA
@@ -1133,7 +1133,7 @@
 "FALSE","FALSE","Prov. Domein Lippensgoed, Bulskampveld, eendeputten"," "," ","NA","YES","I_8730_8","ANB","ANB_Mtp","Lentisch","Lippensgoed Bulskampveld","West-Vlaanderen","Beernem","8730","NA","NA","WVLBRN0413","51.1108486656945","3.30774740398613",NA,NA,NA,NA
 "FALSE","FALSE","Rupelmondse kreek thv visvijver en sluis"," "," ","NA","YES","I_9150_3","ANB","ANB_Mtp","Lentisch","Kruibeke - Bazel - Rupelmonde","Oost-Vlaanderen","Kruibeke","9150","NA","NA","OVLKRU0197","51.1285054243727","4.30557395398754",NA,NA,NA,NA
 "FALSE","FALSE","Rupelmondse kreek thv uitlopers"," "," ","NA","YES","I_9150_4","ANB","ANB_Mtp","Lentisch","Kruibeke - Bazel - Rupelmonde","Oost-Vlaanderen","Kruibeke","9150","NA","NA","OVLKRU0197","51.1350136317454","4.30632245816969",NA,NA,NA,NA
-"FALSE","FALSE","Zaffelare,Giesmeersbos,Bosdam,veldweg"," "," ","NA","YES","I_9080_4"," ","ANB_Mtp","Lentisch","Puyenbroeck","Oost-Vlaanderen","Lochristi","9080","NA","NA","OVLLOC0341","51.1429647363764","3.8800557316563",NA,NA,NA,NA
+"ONHOLD","ONHOLD","Zaffelare,Giesmeersbos,Bosdam,veldweg"," ","nweyoti0 ","NA","YES","I_9080_4"," ","ANB_Mtp","Lentisch","Puyenbroeck","Oost-Vlaanderen","Lochristi","9080","NA","NA","OVLLOC0341","51.1429647","3.8800557",NA,NA,NA,NA
 "FALSE","FALSE","Provinciaal Domein Het Leen,Kraaiweg"," "," ","NA","YES","I_9931_2","ANB","ANB_Mtp","Lentisch","Het Leen","Oost-Vlaanderen","Lievegem","9931","NA","NA","OVLZOM0020","51.1642285318952","3.56788482646377",NA,NA,NA,NA
 "FALSE","FALSE","Provinciaal Domein Het Leen"," "," ","NA","YES","I_9950_4","ANB","ANB_Mtp","Lentisch","Het Leen","Oost-Vlaanderen","Lievegem","9950","NA","NA","OVLWRS0006","51.1651471007703","3.57882058842962",NA,NA,NA,NA
 "FALSE","FALSE","Provinciaal Domein Het Leen"," "," ","NA","YES","I_9950_5","ANB","ANB_Mtp","Lentisch","Het Leen","Oost-Vlaanderen","Lievegem","9950","NA","NA","OVLWRS0030","51.1662116772107","3.57537123210581",NA,NA,NA,NA
@@ -1330,7 +1330,7 @@
 "FALSE","FALSE","Tielt"," "," ","NA","YES","I_8700_4"," ","Scheers","Lentisch"," ","West-Vlaanderen","Tielt","8700","NA","NA","WVLTLT0167","51.0033549905663","3.32186219915423",NA,NA,NA,NA
 "FALSE","FALSE","Deinze"," "," ","NA","YES","I_9800_17"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Deinze","9800","NA","NA","OVLDEI0242","50.9785030905426","3.51981529936468",NA,NA,NA,NA
 "FALSE","FALSE","Zottegem"," "," ","NA","YES","I_9620_3"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Zottegem","9620","NA","NA","OVLZOT0167","50.8707277901214","3.83030969909379",NA,NA,NA,NA
-"ONHOLD","ONHOLD","Brakel"," ","nwyxntuy ","NA","YES","I_9660_4"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Brakel","9660","NA","NA","OVLBRK0099","50.8033955","3.7572155",NA,NA,NA,NA
+"TRUE","TRUE","Brakel"," ","nwyxntuy ","NA","YES","I_9660_4"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Brakel","9660","NA","NA","OVLBRK0099","50.8033955","3.7572155",NA,NA,NA,NA
 "TRUE","TRUE","recreation area, Provincial dom. De Gavers Geraardsbergen"," ","mta3yjmz","NA","YES","I_9500_2"," ","Scheers","Lentisch","De Gavers","Oost-Vlaanderen","Geraardsbergen","9500","NA","NA","OVLGER0176","50.7922846903992","3.91394379933084",NA,NA,NA,NA
 "FALSE","FALSE","Ninove"," "," ","NA","YES","I_9400_5"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Ninove","9400","NA","NA","OVLNIN0058","50.8301577905911","4.01861279892303",NA,NA,NA,NA
 "FALSE","FALSE","Private?"," "," ","NA","YES","I_9470_1"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Denderleeuw","9470","NA","NA","OVLDNL0027","50.8757820902502","4.0648301988415",NA,NA,NA,NA
@@ -1393,7 +1393,7 @@
 "FALSE","FALSE","Oudenaarde"," "," ","NA","YES","I_9700_17"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Oudenaarde","9700","NA","NA","OVLOUD0172","50.8458755903637","3.60894309898542",NA,NA,NA,NA
 "FALSE","FALSE","botanic garden, Ghent"," "," ","NA","YES","I_9000_7"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Gent","9000","NA","NA","OVLGNT0353","51.0359719898738","3.72245179886985",NA,NA,NA,NA
 "ONHOLD","ONHOLD","citadelpark"," ","ownlnda3 ","NA","YES","I_9000_8"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Gent","9000","NA","NA","OVLGNT0825","51.0389914","3.7233503",NA,NA,NA,NA
-"FALSE","FALSE","recreation area, Provincial dom. Puyenbroeck"," "," ","NA","YES","I_9185_8"," ","Scheers","Lentisch","Puyenbroeck","Oost-Vlaanderen","Wachtebeke","9185","NA","NA","OVLWAC0008","51.1495341898514","3.88240339864453",NA,NA,NA,NA
+"ONHOLD","ONHOLD","recreation area, Provincial dom. Puyenbroeck"," ","nweyoti0 ","NA","YES","I_9185_8"," ","Scheers","Lentisch","Puyenbroeck","Oost-Vlaanderen","Wachtebeke","9185","NA","NA","OVLWAC0008","51.1495342","3.8824034",NA,NA,NA,NA
 "FALSE","FALSE"," ","Sint Elooiskreek"," ","NA","YES","I_9185_9"," ","Scheers","Lentisch"," ","Oost-Vlaanderen","Wachtebeke","9185","NA","NA","OVLWAC0025","51.2153624898065","3.87435839887596",NA,NA,NA,NA
 "FALSE","FALSE","Roeselarekreek"," "," ","NA","YES","I_9982_11"," ","Scheers","Lentisch","Meetjeslandse Krekengebied","Oost-Vlaanderen","Sint-Laureins","9982","NA","NA","OVLSTL0209","51.2691228904873","3.56087159891124",NA,NA,NA,NA
 "FALSE","FALSE","Aartselaar"," "," ","NA","YES","I_2630_3"," ","Scheers","Lentisch"," ","Antwerpen","Aartselaar","2630","NA","NA","ANTARL0059","51.1377951902648","4.3945112991094","NA",NA,NA,NA
@@ -1448,7 +1448,9 @@
 "FALSE","FALSE"," "," "," ","NA","YES","I_3650_12","LILA","Scheers","Lentisch"," ","Limburg","Dilsen-Stokkem","3650","NA","NA"," ","51.0387858298148","5.75074889963545",NA,NA,NA,NA
 "FALSE","FALSE"," "," "," ","NA","YES","I_3650_13","LILA?","Scheers","Lentisch"," ","Limburg","Dilsen-Stokkem","3650","NA","NA"," ","51.0398462163541","5.74460182772654",NA,NA,NA,NA
 "FALSE","FALSE"," "," "," ","NA","YES","I_8630_12","permit?","Scheers","Lentisch"," ","West-Vlaanderen","Veurne","8630","NA","NA"," ","51.0685187719897","2.67809284770898",NA,NA,NA,NA
-"FALSE","FALSE"," Watermolen op de Winge","Winge"," ","NA","YES","V_3111_2"," "," ","Lotisch"," ","Vlaams-Brabant","Rotselaar","3111","1","0"," ","50.9370798808142","4.77301013818346",NA,NA,NA,NA
+"ONHOLD","ONHOLD","Watermolen op de Winge","Winge","zjbmngyy ","NA","YES","V_3111_2"," "," ","Lotisch"," ","Vlaams-Brabant","Rotselaar","3111","1","0"," ","50.9370799","4.7730101",NA,NA,NA,NA
 "FALSE","FALSE","NA","NA","NA","NA","NO","V_9500_3","NA","NA","NA","NA","Oost-Vlaanderen","Geraardsbergen","9500","NA","NA","NA","50.7772303","3.8945029",NA,NA,NA,NA
 "ONHOLD","ONHOLD","NA","NA","ntc5zjdl","NA","YES","I_2460_9","NA","NA","NA","NA","Antwerpen","Kasterlee","2460","NA","NA","NA","51.2279585","4.9779557","NA",NA,NA,NA
 "ONHOLD","ONHOLD","NA","NA","nzzmzdm3","NA","NO","V_2490_2","NA","NA","NA","NA","Antwerpen","Balen","2490","NA","NA","NA","51.1902884","5.244542","NA",NA,NA,NA
+"ONHOLD","ONHOLD",NA,"Watering De Molenbeek","zjbmngyy",NA,"YES","I_3220_2",NA,NA,NA,NA,"Vlaams-Brabant","Holsbeek","3220",NA,NA,NA,"50.9343435","4.8303267",NA,NA,NA,NA
+"ONHOLD","ONHOLD",NA,NA,"zjbmngyy",NA,"YES","I_3390_1",NA,NA,NA,NA,"Vlaams-Brabant","Tielt-Winge","3390",NA,NA,NA,"50.9071142","4.8515781",NA,NA,NA,NA
